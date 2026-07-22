@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShieldPoint - Practical Cybersecurity Engineering</title>
+    <meta
+      name="description"
+      content="ShieldPoint is a cybersecurity engineering blog for incident response, secure architecture, detection, identity, and resilient operations."
+    >
+    <meta name="theme-color" content="#f4f5f5">
+    <meta property="og:title" content="ShieldPoint">
+    <meta
+      property="og:description"
+      content="Practical cybersecurity engineering notes for teams that build, defend, and recover."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/shieldpoint-hero.png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="ShieldPoint home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <path d="M16 3 27 7v8c0 7.1-4.3 11.4-11 14C9.3 26.4 5 22.1 5 15V7l11-4Z"></path>
+              <path d="M16 8v14"></path>
+              <path d="M10.5 13.5h11"></path>
+            </svg>
+          </span>
+          <span>ShieldPoint</span>
+        </a>
+
+        <div class="nav-links" aria-label="Sections">
+          <a href="#latest">Articles</a>
+          <a href="#briefings">Briefings</a>
+          <a href="#playbooks">Playbooks</a>
+          <a href="#newsletter">Newsletter</a>
+        </div>
+
+        <div class="nav-actions">
+          <label class="search-field" for="site-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16.2 16.2 4.3 4.3"></path>
+            </svg>
+            <input id="site-search" type="search" placeholder="Search" autocomplete="off">
+          </label>
+          <a class="icon-link" href="#newsletter" aria-label="Subscribe">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="m4 7 8 6 8-6"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Security architecture, incident lessons, and defender craft</p>
+          <h1 id="hero-title">Clear writing for teams building systems worth trusting.</h1>
+          <p class="hero-summary">
+            ShieldPoint publishes field notes for engineers, security leaders, and operators who want
+            calmer decisions before, during, and after real incidents.
+          </p>
+          <div class="hero-cta" aria-label="Primary actions">
+            <a class="button primary" href="#featured">Read featured</a>
+            <a class="button secondary" href="#latest">Browse latest</a>
+          </div>
+        </div>
+
+        <article class="hero-card" id="featured">
+          <img src="assets/shieldpoint-hero.png" alt="Cybersecurity workstation with a laptop, shield sculpture, notebook, and hardware security key">
+          <div class="hero-card-caption">
+            <p class="article-meta">Featured / 12 min read</p>
+            <h2>Designing Security Programs That Still Work Under Pressure</h2>
+            <p>
+              A practical framework for turning threat models, detection gaps, and executive risk
+              conversations into a defense plan teams can actually operate.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="signal-strip" aria-label="Publication statistics">
+        <div>
+          <strong>126</strong>
+          <span>field notes</span>
+        </div>
+        <div>
+          <strong>18k</strong>
+          <span>monthly readers</span>
+        </div>
+        <div>
+          <strong>42</strong>
+          <span>incident reviews</span>
+        </div>
+        <div>
+          <strong>6</strong>
+          <span>core domains</span>
+        </div>
+      </section>
+
+      <section class="content-band" id="latest" aria-labelledby="latest-title">
+        <div class="section-heading">
+          <p class="eyebrow">Latest articles</p>
+          <h2 id="latest-title">Recent work from the notebook</h2>
+        </div>
+
+        <div class="filter-row" aria-label="Article filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="Detection">Detection</button>
+          <button class="filter-button" type="button" data-filter="Identity">Identity</button>
+          <button class="filter-button" type="button" data-filter="Cloud">Cloud</button>
+          <button class="filter-button" type="button" data-filter="Response">Response</button>
+        </div>
+
+        <div class="article-list" id="article-list">
+          <article class="post-card" data-category="Detection" data-search="detection engineering rule tuning fatigue false positive">
+            <div class="post-image detection" aria-hidden="true"></div>
+            <div class="post-copy">
+              <p class="article-meta">Detection / Maya Chen / Jul 18, 2026</p>
+              <h3><a href="#article-detection">The Detection Review That Cuts Alert Fatigue in Half</a></h3>
+              <p>
+                A repeatable review format for deciding which alerts deserve engineering time,
+                analyst trust, and executive visibility.
+              </p>
+              <div class="tag-row" aria-label="Tags">
+                <span>SIEM</span>
+                <span>Signal quality</span>
+                <span>8 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="Identity" data-search="identity access least privilege privileged account recovery">
+            <div class="post-image identity" aria-hidden="true"></div>
+            <div class="post-copy">
+              <p class="article-meta">Identity / Rene Alvarez / Jul 16, 2026</p>
+              <h3><a href="#article-identity">Least Privilege Is a Lifecycle, Not a Cleanup Sprint</a></h3>
+              <p>
+                How to keep role design, exception reviews, and break-glass access from drifting
+                back into quiet risk.
+              </p>
+              <div class="tag-row" aria-label="Tags">
+                <span>IAM</span>
+                <span>Governance</span>
+                <span>10 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="Cloud" data-search="cloud posture kubernetes secrets network boundary attack path">
+            <div class="post-image cloud" aria-hidden="true"></div>
+            <div class="post-copy">
+              <p class="article-meta">Cloud / Jo Petrov / Jul 11, 2026</p>
+              <h3><a href="#article-cloud">Mapping Cloud Attack Paths Before They Become Incidents</a></h3>
+              <p>
+                A compact model for connecting misconfigurations, secrets, workload identity, and
+                network reachability into one useful review.
+              </p>
+              <div class="tag-row" aria-label="Tags">
+                <span>Kubernetes</span>
+                <span>Posture</span>
+                <span>11 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="Response" data-search="incident response tabletop executive communications timeline">
+            <div class="post-image response" aria-hidden="true"></div>
+            <div class="post-copy">
+              <p class="article-meta">Response / Lina Okafor / Jul 8, 2026</p>
+              <h3><a href="#article-response">The Incident Timeline Your Executives Actually Need</a></h3>
+              <p>
+                Separate what happened, what matters, and what comes next so leadership can support
+                responders without adding turbulence.
+              </p>
+              <div class="tag-row" aria-label="Tags">
+                <span>IR</span>
+                <span>Comms</span>
+                <span>7 min</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="briefings" aria-labelledby="briefings-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Weekly briefings</p>
+          <h2 id="briefings-title">The signal worth carrying into Monday</h2>
+        </div>
+
+        <div class="briefing-grid">
+          <article>
+            <p class="article-meta">Threat landscape</p>
+            <h3>Ransomware crews are compressing dwell time again</h3>
+            <p>Three practical moves for teams that cannot buy their way out of response latency.</p>
+          </article>
+          <article>
+            <p class="article-meta">Secure delivery</p>
+            <h3>Dependency review without blocking every release</h3>
+            <p>A triage pattern for exploitability, reachability, compensating controls, and ownership.</p>
+          </article>
+          <article>
+            <p class="article-meta">Leadership</p>
+            <h3>The board question behind every security metric</h3>
+            <p>Translate control performance into resilience, recovery, exposure, and decision speed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="playbook-section" id="playbooks" aria-labelledby="playbooks-title">
+        <div class="section-heading">
+          <p class="eyebrow">Operator playbooks</p>
+          <h2 id="playbooks-title">Structured guides for repeatable defense</h2>
+        </div>
+
+        <div class="playbook-grid">
+          <a href="#playbook-zero-trust">
+            <span>01</span>
+            <strong>Zero trust rollout map</strong>
+            <em>Controls, dependencies, and sequencing for real organizations.</em>
+          </a>
+          <a href="#playbook-logging">
+            <span>02</span>
+            <strong>Minimum viable logging</strong>
+            <em>What to collect first when storage, time, and patience are finite.</em>
+          </a>
+          <a href="#playbook-crisis">
+            <span>03</span>
+            <strong>Crisis room checklist</strong>
+            <em>Roles, rhythms, and artifacts for the first 72 hours.</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <p class="eyebrow">ShieldPoint Dispatch</p>
+          <h2 id="newsletter-title">One useful security note every Friday.</h2>
+          <p>
+            No hype cycle summaries. Just sharp patterns, practical questions, and the occasional
+            diagram that saves a meeting.
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="email">Email address</label>
+          <div>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Subscribe</button>
+          </div>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="#">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <path d="M16 3 27 7v8c0 7.1-4.3 11.4-11 14C9.3 26.4 5 22.1 5 15V7l11-4Z"></path>
+              <path d="M16 8v14"></path>
+              <path d="M10.5 13.5h11"></path>
+            </svg>
+          </span>
+          <span>ShieldPoint</span>
+        </a>
+        <p>Practical cybersecurity writing for builders, defenders, and leaders.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#latest">Articles</a>
+        <a href="#briefings">Briefings</a>
+        <a href="#playbooks">Playbooks</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
