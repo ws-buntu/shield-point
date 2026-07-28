@@ -9,14 +9,22 @@
       content="ShieldPoint is a cybersecurity engineering blog for incident response, secure architecture, detection, identity, and resilient operations."
     >
     <meta name="theme-color" content="#f4f5f5">
+    <link rel="canonical" href="https://shieldpoint.online/">
     <meta property="og:title" content="ShieldPoint">
     <meta
       property="og:description"
       content="Practical cybersecurity engineering notes for teams that build, defend, and recover."
     >
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/shieldpoint-hero.png">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:url" content="https://shieldpoint.online/">
+    <meta property="og:image" content="https://shieldpoint.online/assets/shieldpoint-hero.png">
+    <meta property="og:image:alt" content="A cybersecurity workstation with a laptop, shield sculpture, notebook, and hardware security key">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ShieldPoint">
+    <meta name="twitter:description" content="Practical cybersecurity engineering notes for teams that build, defend, and recover.">
+    <meta name="twitter:image" content="https://shieldpoint.online/assets/shieldpoint-hero.png">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23131515'/%3E%3Cpath d='M16 4 26 8v7.5C26 22 22 26 16 28 10 26 6 22 6 15.5V8l10-4Z' fill='none' stroke='%23f4f5f5' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M16 9v13M10.5 14.5h11' stroke='%23f4f5f5' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="preload" as="image" href="assets/shieldpoint-hero.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -76,7 +84,23 @@
         </div>
 
         <article class="hero-card" id="featured">
-          <img src="assets/shieldpoint-hero.png" alt="Cybersecurity workstation with a laptop, shield sculpture, notebook, and hardware security key">
+          <div class="hero-media">
+            <img src="assets/shieldpoint-hero.png" alt="Cybersecurity workstation with a laptop, shield sculpture, notebook, and hardware security key">
+            <div class="hero-fallback" aria-hidden="true">
+              <div class="fallback-window">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="fallback-shield">
+                <svg viewBox="0 0 96 112" role="img">
+                  <path d="M48 6 84 19v30c0 26-14 43-36 56C26 92 12 75 12 49V19L48 6Z"></path>
+                  <path d="M48 28v50"></path>
+                  <path d="M30 50h36"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
           <div class="hero-card-caption">
             <p class="article-meta">Featured / 12 min read</p>
             <h2>Designing Security Programs That Still Work Under Pressure</h2>

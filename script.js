@@ -3,6 +3,7 @@ const postCards = document.querySelectorAll(".post-card");
 const searchInput = document.querySelector("#site-search");
 const newsletterForm = document.querySelector("#newsletter-form");
 const formMessage = document.querySelector("#form-message");
+const heroImage = document.querySelector(".hero-media img");
 
 let activeFilter = "all";
 
@@ -30,6 +31,16 @@ filterButtons.forEach((button) => {
 });
 
 searchInput.addEventListener("input", updatePosts);
+
+if (heroImage) {
+  heroImage.addEventListener("error", () => {
+    heroImage.closest(".hero-card")?.classList.add("image-unavailable");
+  });
+
+  if (heroImage.complete && heroImage.naturalWidth === 0) {
+    heroImage.closest(".hero-card")?.classList.add("image-unavailable");
+  }
+}
 
 newsletterForm.addEventListener("submit", (event) => {
   event.preventDefault();

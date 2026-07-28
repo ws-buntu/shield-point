@@ -308,10 +308,97 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.hero-card img {
-  width: 100%;
+.hero-media {
+  position: relative;
+  overflow: hidden;
   aspect-ratio: 16 / 10;
+  background:
+    linear-gradient(135deg, rgba(103, 133, 119, 0.14), rgba(119, 97, 129, 0.12)),
+    var(--paper-warm);
+}
+
+.hero-media img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.hero-card.image-unavailable .hero-media img {
+  display: none;
+}
+
+.hero-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 8%;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.9), transparent 26%),
+    linear-gradient(135deg, rgba(103, 133, 119, 0.18), rgba(119, 97, 129, 0.2));
+}
+
+.fallback-window {
+  position: absolute;
+  inset: 14% 28% 22% 12%;
+  border: 1px solid rgba(19, 21, 21, 0.16);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(19, 21, 21, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(19, 21, 21, 0.08) 1px, transparent 1px),
+    rgba(255, 255, 255, 0.58);
+  background-size: 34px 34px;
+  box-shadow: 0 24px 60px rgba(19, 21, 21, 0.13);
+}
+
+.fallback-window span {
+  position: absolute;
+  left: 10%;
+  right: 16%;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(63, 95, 82, 0.42);
+}
+
+.fallback-window span:nth-child(1) {
+  top: 25%;
+  width: 58%;
+}
+
+.fallback-window span:nth-child(2) {
+  top: 46%;
+  width: 76%;
+  background: rgba(119, 97, 129, 0.34);
+}
+
+.fallback-window span:nth-child(3) {
+  top: 67%;
+  width: 46%;
+}
+
+.fallback-shield {
+  position: absolute;
+  right: 12%;
+  bottom: 14%;
+  display: grid;
+  place-items: center;
+  width: min(24%, 132px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(19, 21, 21, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.64);
+  box-shadow: 0 18px 50px rgba(19, 21, 21, 0.12);
+}
+
+.fallback-shield svg {
+  width: 54%;
+  fill: none;
+  stroke: var(--sage-dark);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5;
 }
 
 .hero-card-caption {
